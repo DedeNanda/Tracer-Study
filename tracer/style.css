@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto:wght@300;400;500;700;900&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;500;700;900&display=swap');
+:root{
+    --button:#8CB560;
+    --yellow:#FEBD00;
+    --green : #62ae2f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: fixed;
+    left: 0;
+    right: 0;
+
+}
+.logo h1{
+    color: var(--yellow);
+    margin-right: 5px;
+    color: #b8860b;
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+}
+.logo i{
+    margin-right: 10px;
+
+}
+.navbar a{
+    font-size: 18px;
+    color: black;
+    padding: 1rem;
+    margin-left: 5px;
+    position: relative;
+}
+.navbar a::after{
+    content: "";
+    background-color: #62ae2f;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    top: 100%;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+
+.home{
+    
+    padding: 5rem 7%;
+}
+.main-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.inner-home{
+    flex: 1 1 45rem;
+}
+.left-content-home h1{
+    color: #b8860b;
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 2rem;
+}
+.left-content-home h2{
+    color: #333;
+    font-size: 26px;
+    padding-bottom: 2rem;
+}
+
+.left-content-home p{
+    color: #333;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.left-content-home button{
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+    color: #e5e4e2;
+    border: 1px solid var(--green);
+    background: var(--green);
+    transition: 0.5s;
+}
+.left-content-home button:hover{
+    cursor: pointer;
+    background: var(--green);
+    border-radius: 10px;
+    color: white;
+}
+
+
+.inner-home .home-img{
+    padding: 2rem;
+}
+.inner-home .home-img img{
+    width: 100%;
+}
+.About{
+    padding: 2rem 7%;
+    background: #f5f5f5;
+    background-image: url(images/Design\ Elements.png);
+    background-position: 100% 100%;
+}
+
+.About h1{
+    text-align: center;
+    color: #b8860b;
+    font-size: 36px;
+}
+
+.main-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.inner-about{
+    flex: 1 1 45rem;
+}
+
+.right-content-about h2{
+    font-size: 26px;
+    color: #333;
+    padding: 2rem 0;
+}
+.right-content-about h3{
+    color: #b8860b;
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+}
+.right-content-about p{
+    color: #333;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.right-content-about button{
+    padding: auto;
+    font-size: 1.5rem;
+    color: #e5e4e2;
+    border: 1px solid var(--green);
+    transition: 0.5s;
+    background-color: var(--green);
+}
+.right-content-about button:hover{
+    cursor: pointer;
+    background: var(--green);
+    border-radius: 10px;
+    color: #e5e4e2;
+}
+
+.inner-about .about-img{
+    padding: 5rem;
+}
+.inner-about .about-img img{
+    width: 100%;
+}
+
+
+.inner-link h3{
+    color: #b8860b;
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.main-footer{
+    background-image: url(images/Design\ Elements.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+  }
+  .inner-footer{
+    flex: 1 1 30rem;
+  }
+  .inner-footer a{
+    display: block;
+    color: #b8860b;
+    padding: 2rem 1rem;
+    font-size: 18px;
+  }
+  .inner-footer a:hover{
+    margin-left: 10px;
+  }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--green); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(red, yellow);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+@media (max-width:768px) {
+    
+    header{
+        padding: 2rem;
+    }
+    html{
+        font-size: 55%;
+    }
+
+    .icons #menu-bar{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left: 0; right:0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        height: 100vh;
+      }
+      header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+     
+      header .navbar a{
+        margin: 1.5rem;
+        padding:1.5rem;
+        display: block;
+        border:.2rem solid rgba(0,0,0,.1);
+        border-left:.5rem solid var(--red);
+        background:var(--green);
+        color: white;
+      }
+
+      .inner-home .home-img{
+        padding: 1rem;
+    }
+    .home{
+        padding-top: 8rem;
+    }
+
+
+}
+
